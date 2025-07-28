@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Where did they go?</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.11.1/mapbox-gl.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.11.1/mapbox-gl.js"></script>
+
+</head>
+<body>
+    <section class="intro">
+        <nav class="contenido">
+            <a href="index.html">Home</a>
+            <a class = "active" href ="map.html">Map</a>
+            <a href="cases.html">Cases</a>
+        </nav>
+    </section>
+
+<div class="legend">
+    <h3> Number of <br/>clandestine graveyards</h3>
+    <ul class="legend-list">
+        <li><span class="circle" style="width: 6px; height: 6px;"></span>3</li>
+        <li><span class="circle" style="width: 16px; height: 16px;"></span>11</li>
+        <li><span class="circle" style="width: 30px; height: 30px;"></span>26</li>
+        <li><span class="circle" style="width: 44px; height: 44px;"></span>49</li>
+        <li><span class="circle" style="width: 58px; height: 58px;"></span>100</li>
+    </ul>
+    <h4>Year of discovery</h4>
+    <ul class="legend-list">
+        <li><span class="circle" style="width: 16px; height: 16px; background-color: #f9f871;"></span> 2009</li>
+        <li><span class="circle" style="width: 16px; height: 16px; background-color: #f5b54c;"></span> 2011</li>
+        <li><span class="circle" style="width: 16px; height: 16px; background-color: #f1903d;"></span> 2013</li>
+        <li><span class="circle" style="width: 16px; height: 16px; background-color: #e3643b;"></span> 2015</li>
+        <li><span class="circle" style="width: 16px; height: 16px; background-color: #cd4b4c;"></span> 2018</li>
+        <li><span class="circle" style="width: 16px; height: 16px; background-color: #a5354a;"></span> 2019</li>
+    </ul>
+</div>
+<div id="map"></div>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoibWlndWVsc29sYW5vODU1NSIsImEiOiJjbWE2dmFjYm8wcjcxMmtxdTJjNTl3cWRsIn0.izArGjg1htVx1PgTjM7rWg';
+    const map = new mapboxgl.Map({
+        container: "map",
+        center: [-102.5528, 23.6345],
+        zoom: 4.5,
+        style: "mapbox://styles/miguelsolano8555/cma6x375500g101s34ehwdov3",
+    });
+</script>
+
+</body>
+</html>
