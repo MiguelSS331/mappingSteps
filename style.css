@@ -141,14 +141,14 @@ body.index, html.index {
 
 @font-face{
   font-family:'FiraCode';
-  src: url("./fonts/FiraCode-VariableFont_wght.ttf") format("truetype");
+  src: url("./Fonts/FiraCode-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url("./fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  src: url("./Fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
 
 .container-left,
