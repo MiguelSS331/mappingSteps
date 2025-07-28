@@ -139,16 +139,14 @@ body.index, html.index {
   color: black;
 }
 
-@font-face{
-  font-family:'FiraCode';
-  src: url("./Fonts/FiraCode-VariableFont_wght.ttf") format("truetype");
-  font-weight: 100 700;
-  font-style: normal;
+@font-face {
+  font-family: 'Oswald';
+  src: url("/Fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Oswald";
-  src: url("./Fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-family: 'FiraCode';
+  src: url("/Fonts/FiraCode-VariableFont_wght.ttf") format("truetype");
 }
 
 .container-left,
