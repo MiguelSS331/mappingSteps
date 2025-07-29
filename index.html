@@ -5,6 +5,7 @@
     <title>What must not bee seen</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
     
 <body>
@@ -222,6 +223,12 @@
         setInterval(animationPic, 4000);
 
         slideshow.style.backgroundImage = `url('${backgrounds[0]}')`;
+
+        const isMobile = window.innerWidth < 768;
+        hugeText.textContent = isMobile
+        ? "WE NEED TO TALK ABOUT VIOLENCE BECAUSE THEY ARE STILL MISSING ".repeat(10)
+        : "WE NEED TO TALK ABOUT VIOLENCE BECAUSE THEY ARE STILL MISSING ".repeat(100);
+
     </script> 
 </body>
 </html>
