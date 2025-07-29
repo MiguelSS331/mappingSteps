@@ -59,6 +59,7 @@ body.index, html.index {
   position: relative;
   align-content: center;
   text-align: center;
+  justify-content: space-around;
 }
 
 .timeline::after{
@@ -111,7 +112,12 @@ body.index, html.index {
   padding-top: 2.1vw;
   opacity: 1;
 }
-
+@media (max-width: 768px) {
+  .hugeText {
+    font-size: 10vw;
+    line-height: 1.1;
+  }
+}
 
 .contenido {
   position: relative;
@@ -162,23 +168,15 @@ body.index, html.index {
   justify-content: center;
 }
 
-.container-left h2{
-  align-items: center;
+.container-left h2,
+.container-right h2 {
   text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
   font-size: 2rem;
-  line-height: 1.5;
-  color: red;
-  width: 700px;
 }
 
-.container-right h2{
-  align-items: center;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 1.5;
-  color: green;
-  width: 700px;
-}
 
 .container-left p,
 .container-right p{
@@ -331,3 +329,5 @@ body.index, html.index {
   margin-top: 20px;
   max-width: 90%;
 }
+
+
